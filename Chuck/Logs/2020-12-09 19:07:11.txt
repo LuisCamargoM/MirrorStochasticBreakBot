@@ -1,0 +1,1 @@
+12/09/2020 07:07:23  **error** get_candles need reconnect

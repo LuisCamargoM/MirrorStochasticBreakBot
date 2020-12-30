@@ -1,0 +1,14 @@
+12/16/2020 03:25:09  Conectado com sucesso! 25334
+12/16/2020 03:25:11  Starting analysing Blue-Pink active pairs em: EURUSD
+12/16/2020 03:25:11  Starting analysing Green-Orange active pairs em: EURUSD
+12/16/2020 03:25:12  Existem menos de 10 ciclos
+12/16/2020 03:25:13  Starting analysing Blue-Pink active pairs em: EURGBP
+12/16/2020 03:25:13  Starting analysing Green-Orange active pairs em: EURGBP
+12/16/2020 03:25:14  Starting analysing Blue-Pink active pairs em: USDJPY
+12/16/2020 03:25:15  Starting analysing Green-Orange active pairs em: USDJPY
+12/16/2020 03:25:16  Starting analysing Blue-Pink active pairs em: AUDUSD
+12/16/2020 03:25:16  Starting analysing Green-Orange active pairs em: AUDUSD
+12/16/2020 03:25:18  Starting analysing Blue-Pink active pairs em: EURJPY
+12/16/2020 03:25:18  Starting analysing Green-Orange active pairs em: EURJPY
+12/16/2020 03:25:18  Existem menos de 10 ciclos
+12/16/2020 03:25:18  

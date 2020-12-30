@@ -1,0 +1,19 @@
+12/19/2020 01:14:45  Conectado com sucesso! 34846
+12/19/2020 01:14:47  Starting analysing Blue-Pink active pairs em: NZDUSD-OTC
+12/19/2020 01:14:47  Starting analysing Green-Orange active pairs em: NZDUSD-OTC
+12/19/2020 01:14:48  Starting analysing Blue-Pink active pairs em: AUDCAD-OTC
+12/19/2020 01:14:48  Starting analysing Green-Orange active pairs em: AUDCAD-OTC
+12/19/2020 01:14:49  Starting analysing Blue-Pink active pairs em: USDCHF-OTC
+12/19/2020 01:14:50  Starting analysing Green-Orange active pairs em: USDCHF-OTC
+12/19/2020 01:14:50  Existem menos de 10 ciclos
+12/19/2020 01:14:50  Starting analysing Blue-Pink active pairs em: EURJPY-OTC
+12/19/2020 01:14:51  Starting analysing Green-Orange active pairs em: EURJPY-OTC
+12/19/2020 01:14:51  Starting analysing Blue-Pink active pairs em: EURUSD-OTC
+12/19/2020 01:14:52  Starting analysing Green-Orange active pairs em: EURUSD-OTC
+12/19/2020 01:14:52  [20, 20, 19, 19, 18, 20, 19, 18, 17, 16, 15, 14, 13, 12, 11, 15, 14, 13, 12, 11, 10, 9, 8, 8, 7, 6, 5, 5, 4, 6, 5, 4, 3, 2, 4, 3, 2, 1, 1, 0, 1, 0]
+12/19/2020 01:14:52  [['\U0001f7e2', 1608387540], ['\U0001f7e0', 1608388140], ['\U0001f7e2', 1608388320], ['\U0001f7e0', 1608389280], ['\U0001f7e2', 1608389940], ['\U0001f7e0', 1608390300], ['\U0001f7e0', 1608391020], ['\U0001f7e0', 1608391260], ['\U0001f7e2', 1608391620], ['\U0001f7e2', 1608392940], ['\U0001f7e2', 1608393600]]
+12/19/2020 01:14:52  Total == 0
+12/19/2020 01:14:53  Starting analysing Blue-Pink active pairs em: GBPUSD-OTC
+12/19/2020 01:14:53  Starting analysing Green-Orange active pairs em: GBPUSD-OTC
+12/19/2020 01:14:56  Starting analysing Blue-Pink active pairs em: EURGBP-OTC
+12/19/2020 01:14:56  **error** get_candles need reconnect

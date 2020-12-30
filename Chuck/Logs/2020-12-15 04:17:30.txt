@@ -1,0 +1,3 @@
+12/15/2020 04:17:33  Conectado com sucesso! 18542
+12/15/2020 06:33:22  [Errno 54] Connection reset by peer
+12/15/2020 06:33:52  **warning** get_all_init_v2 late 30 sec

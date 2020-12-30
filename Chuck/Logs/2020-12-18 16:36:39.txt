@@ -1,0 +1,77 @@
+12/18/2020 04:36:42  Conectado com sucesso! 33862
+12/18/2020 04:36:44  Starting analysing Blue-Pink active pairs em: NZDUSD-OTC
+12/18/2020 04:36:44  Starting analysing Green-Orange active pairs em: NZDUSD-OTC
+12/18/2020 04:36:45  Starting analysing Blue-Pink active pairs em: AUDCAD-OTC
+12/18/2020 04:36:46  Starting analysing Green-Orange active pairs em: AUDCAD-OTC
+12/18/2020 04:36:46  [10, 10, 9, 10, 9, 8, 8, 7, 7, 6, 5, 4, 3, 3, 2, 2, 1, 2, 1, 0, 1, 0]
+12/18/2020 04:36:46  [['\U0001f7e0', 1608313440], ['\U0001f7e2', 1608313800], ['\U0001f7e0', 1608315060], ['\U0001f7e0', 1608315360], ['\U0001f7e2', 1608316020], ['\U0001f7e0', 1608316860], ['\U0001f7e2', 1608317700], ['\U0001f7e0', 1608318780], ['\U0001f7e2', 1608319260], ['\U0001f7e2', 1608319740]]
+12/18/2020 04:36:46  Total == 0
+12/18/2020 04:36:47  Starting analysing Blue-Pink active pairs em: USDCHF-OTC
+12/18/2020 04:36:47  Starting analysing Green-Orange active pairs em: USDCHF-OTC
+12/18/2020 04:36:48  Starting analysing Blue-Pink active pairs em: EURJPY-OTC
+12/18/2020 04:36:49  Starting analysing Green-Orange active pairs em: EURJPY-OTC
+12/18/2020 04:36:50  Starting analysing Blue-Pink active pairs em: EURUSD-OTC
+12/18/2020 04:36:50  Starting analysing Green-Orange active pairs em: EURUSD-OTC
+12/18/2020 04:36:50  Existem menos de 10 ciclos
+12/18/2020 04:36:51  Starting analysing Blue-Pink active pairs em: GBPUSD-OTC
+12/18/2020 04:36:51  Starting analysing Green-Orange active pairs em: GBPUSD-OTC
+12/18/2020 04:36:52  Starting analysing Blue-Pink active pairs em: EURGBP-OTC
+12/18/2020 04:36:52  Starting analysing Green-Orange active pairs em: EURGBP-OTC
+12/18/2020 04:36:52  
+12/18/2020 04:36:58  Starting analysing Blue-Pink active pairs em: NZDUSD-OTC
+12/18/2020 04:36:58  Starting analysing Green-Orange active pairs em: NZDUSD-OTC
+12/18/2020 04:36:59  Starting analysing Blue-Pink active pairs em: AUDCAD-OTC
+12/18/2020 04:36:59  Starting analysing Green-Orange active pairs em: AUDCAD-OTC
+12/18/2020 04:37:00  [40, 40, 39, 40, 39, 38, 38, 37, 37, 36, 35, 34, 33, 33, 32, 32, 31, 32, 31, 30, 32, 31, 30, 29, 28, 29, 28, 27, 27, 26, 26, 25, 24, 25, 24, 23, 22, 23, 22, 21, 20, 20, 19, 18, 21, 20, 19, 18, 17, 17, 16, 15, 14, 15, 14, 13, 12, 11, 10, 12, 11, 10, 9, 10, 9, 8, 8, 7, 7, 6, 5, 4, 3, 3, 2, 2, 1, 2, 1, 0, 1, 0]
+12/18/2020 04:37:00  [['\U0001f7e0', 1608313440], ['\U0001f7e2', 1608313800], ['\U0001f7e0', 1608315060], ['\U0001f7e0', 1608315360], ['\U0001f7e2', 1608316020], ['\U0001f7e0', 1608316860], ['\U0001f7e2', 1608317700], ['\U0001f7e0', 1608318780], ['\U0001f7e2', 1608319260], ['\U0001f7e2', 1608319740]]
+12/18/2020 04:37:00  Total == 0
+12/18/2020 04:37:00  Starting analysing Blue-Pink active pairs em: USDCHF-OTC
+12/18/2020 04:37:01  Starting analysing Green-Orange active pairs em: USDCHF-OTC
+12/18/2020 04:37:02  Starting analysing Blue-Pink active pairs em: EURJPY-OTC
+12/18/2020 04:37:02  Starting analysing Green-Orange active pairs em: EURJPY-OTC
+12/18/2020 04:37:03  Starting analysing Blue-Pink active pairs em: EURUSD-OTC
+12/18/2020 04:37:03  Starting analysing Green-Orange active pairs em: EURUSD-OTC
+12/18/2020 04:37:04  Existem menos de 10 ciclos
+12/18/2020 04:37:04  Starting analysing Blue-Pink active pairs em: GBPUSD-OTC
+12/18/2020 04:37:05  Starting analysing Green-Orange active pairs em: GBPUSD-OTC
+12/18/2020 04:37:06  Starting analysing Blue-Pink active pairs em: EURGBP-OTC
+12/18/2020 04:37:06  Starting analysing Green-Orange active pairs em: EURGBP-OTC
+12/18/2020 04:37:06  
+12/18/2020 04:37:08  Starting analysing Blue-Pink active pairs em: NZDUSD-OTC
+12/18/2020 04:37:08  Starting analysing Green-Orange active pairs em: NZDUSD-OTC
+12/18/2020 04:37:11  Starting analysing Blue-Pink active pairs em: AUDCAD-OTC
+12/18/2020 04:37:12  Starting analysing Green-Orange active pairs em: AUDCAD-OTC
+12/18/2020 04:37:12  [70, 70, 69, 70, 69, 68, 68, 67, 67, 66, 65, 64, 63, 63, 62, 62, 61, 62, 61, 60, 62, 61, 60, 59, 58, 59, 58, 57, 57, 56, 56, 55, 54, 55, 54, 53, 52, 53, 52, 51, 50, 50, 49, 48, 51, 50, 49, 48, 47, 47, 46, 45, 44, 45, 44, 43, 42, 41, 40, 42, 41, 40, 39, 40, 39, 38, 38, 37, 37, 36, 35, 34, 33, 33, 32, 32, 31, 32, 31, 30, 32, 31, 30, 29, 28, 29, 28, 27, 27, 26, 26, 25, 24, 25, 24, 23, 22, 23, 22, 21, 20, 20, 19, 18, 21, 20, 19, 18, 17, 17, 16, 15, 14, 15, 14, 13, 12, 11, 10, 12, 11, 10, 9, 10, 9, 8, 8, 7, 7, 6, 5, 4, 3, 3, 2, 2, 1, 2, 1, 0, 1, 0]
+12/18/2020 04:37:12  [['\U0001f7e0', 1608313440], ['\U0001f7e2', 1608313800], ['\U0001f7e0', 1608315060], ['\U0001f7e0', 1608315360], ['\U0001f7e2', 1608316020], ['\U0001f7e0', 1608316860], ['\U0001f7e2', 1608317700], ['\U0001f7e0', 1608318780], ['\U0001f7e2', 1608319260], ['\U0001f7e2', 1608319740]]
+12/18/2020 04:37:12  Total == 0
+12/18/2020 04:37:13  Starting analysing Blue-Pink active pairs em: USDCHF-OTC
+12/18/2020 04:37:13  Starting analysing Green-Orange active pairs em: USDCHF-OTC
+12/18/2020 04:37:14  Starting analysing Blue-Pink active pairs em: EURJPY-OTC
+12/18/2020 04:37:14  Starting analysing Green-Orange active pairs em: EURJPY-OTC
+12/18/2020 04:37:15  Starting analysing Blue-Pink active pairs em: EURUSD-OTC
+12/18/2020 04:37:17  Starting analysing Green-Orange active pairs em: EURUSD-OTC
+12/18/2020 04:37:18  Existem menos de 10 ciclos
+12/18/2020 04:37:19  Starting analysing Blue-Pink active pairs em: GBPUSD-OTC
+12/18/2020 04:37:19  Starting analysing Green-Orange active pairs em: GBPUSD-OTC
+12/18/2020 04:37:20  Starting analysing Blue-Pink active pairs em: EURGBP-OTC
+12/18/2020 04:37:21  Starting analysing Green-Orange active pairs em: EURGBP-OTC
+12/18/2020 04:37:21  
+12/18/2020 04:37:23  Starting analysing Blue-Pink active pairs em: NZDUSD-OTC
+12/18/2020 04:37:23  Starting analysing Green-Orange active pairs em: NZDUSD-OTC
+12/18/2020 04:37:24  Starting analysing Blue-Pink active pairs em: AUDCAD-OTC
+12/18/2020 04:37:25  Starting analysing Green-Orange active pairs em: AUDCAD-OTC
+12/18/2020 04:37:25  [100, 100, 99, 100, 99, 98, 98, 97, 97, 96, 95, 94, 93, 93, 92, 92, 91, 92, 91, 90, 92, 91, 90, 89, 88, 89, 88, 87, 87, 86, 86, 85, 84, 85, 84, 83, 82, 83, 82, 81, 80, 80, 79, 78, 81, 80, 79, 78, 77, 77, 76, 75, 74, 75, 74, 73, 72, 71, 70, 72, 71, 70, 69, 70, 69, 68, 68, 67, 67, 66, 65, 64, 63, 63, 62, 62, 61, 62, 61, 60, 62, 61, 60, 59, 58, 59, 58, 57, 57, 56, 56, 55, 54, 55, 54, 53, 52, 53, 52, 51, 50, 50, 49, 48, 51, 50, 49, 48, 47, 47, 46, 45, 44, 45, 44, 43, 42, 41, 40, 42, 41, 40, 39, 40, 39, 38, 38, 37, 37, 36, 35, 34, 33, 33, 32, 32, 31, 32, 31, 30, 32, 31, 30, 29, 28, 29, 28, 27, 27, 26, 26, 25, 24, 25, 24, 23, 22, 23, 22, 21, 20, 20, 19, 18, 21, 20, 19, 18, 17, 17, 16, 15, 14, 15, 14, 13, 12, 11, 10, 12, 11, 10, 9, 10, 9, 8, 8, 7, 7, 6, 5, 4, 3, 3, 2, 2, 1, 2, 1, 0, 1, 0]
+12/18/2020 04:37:25  [['\U0001f7e0', 1608313440], ['\U0001f7e2', 1608313800], ['\U0001f7e0', 1608315060], ['\U0001f7e0', 1608315360], ['\U0001f7e2', 1608316020], ['\U0001f7e0', 1608316860], ['\U0001f7e2', 1608317700], ['\U0001f7e0', 1608318780], ['\U0001f7e2', 1608319260], ['\U0001f7e2', 1608319740]]
+12/18/2020 04:37:25  Total == 0
+12/18/2020 04:37:26  Starting analysing Blue-Pink active pairs em: USDCHF-OTC
+12/18/2020 04:37:27  Starting analysing Green-Orange active pairs em: USDCHF-OTC
+12/18/2020 04:37:28  Starting analysing Blue-Pink active pairs em: EURJPY-OTC
+12/18/2020 04:37:29  Starting analysing Green-Orange active pairs em: EURJPY-OTC
+12/18/2020 04:37:30  Starting analysing Blue-Pink active pairs em: EURUSD-OTC
+12/18/2020 04:37:30  Starting analysing Green-Orange active pairs em: EURUSD-OTC
+12/18/2020 04:37:31  Existem menos de 10 ciclos
+12/18/2020 04:37:32  Starting analysing Blue-Pink active pairs em: GBPUSD-OTC
+12/18/2020 04:37:32  Starting analysing Green-Orange active pairs em: GBPUSD-OTC
+12/18/2020 04:37:33  Starting analysing Blue-Pink active pairs em: EURGBP-OTC
+12/18/2020 04:37:34  Starting analysing Green-Orange active pairs em: EURGBP-OTC
+12/18/2020 04:37:34  

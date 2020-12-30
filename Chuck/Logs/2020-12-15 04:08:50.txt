@@ -1,0 +1,2 @@
+12/15/2020 04:08:53  Conectado com sucesso! 18285
+12/15/2020 04:10:11  **error** get_candles need reconnect

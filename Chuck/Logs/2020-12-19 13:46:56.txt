@@ -1,0 +1,3 @@
+12/19/2020 01:46:59  Conectado com sucesso! 35410
+12/19/2020 01:47:24  Starting analysing Blue-Pink active pairs em: AUDCAD-OTC
+12/19/2020 01:48:18  Starting analysing Green-Orange active pairs em: AUDCAD-OTC

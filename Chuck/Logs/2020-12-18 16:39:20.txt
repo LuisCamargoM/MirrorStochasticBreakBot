@@ -1,0 +1,4 @@
+12/18/2020 04:39:23  Conectado com sucesso! 33925
+12/18/2020 04:39:25  Starting analysing Blue-Pink active pairs em: NZDUSD-OTC
+12/18/2020 04:39:25  Starting analysing Green-Orange active pairs em: NZDUSD-OTC
+12/18/2020 04:39:26  Starting analysing Blue-Pink active pairs em: AUDCAD-OTC

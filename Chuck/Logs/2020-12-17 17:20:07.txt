@@ -1,0 +1,5 @@
+12/17/2020 05:20:10  Conectado com sucesso! 28240
+12/17/2020 05:20:15  Starting analysing Green-Orange active pairs em: USDJPY
+12/17/2020 05:20:15  Existem menos de 10 ciclos
+12/17/2020 05:20:16  Starting analysing Green-Orange active pairs em: AUDUSD
+12/17/2020 05:20:18  Starting analysing Green-Orange active pairs em: EURJPY

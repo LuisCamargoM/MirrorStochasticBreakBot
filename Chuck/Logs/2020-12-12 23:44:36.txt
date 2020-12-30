@@ -1,0 +1,3 @@
+12/12/2020 11:44:40  Conectado com sucesso! 4655
+12/12/2020 11:45:07  **error** get_candles need reconnect
+12/12/2020 11:45:08  [Errno 9] Bad file descriptor

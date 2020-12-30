@@ -1,0 +1,43 @@
+12/17/2020 05:25:10  Conectado com sucesso! 28308
+12/17/2020 05:25:12  Starting analysing Green-Orange active pairs em: USDJPY
+12/17/2020 05:25:13  Existem menos de 10 ciclos
+12/17/2020 05:25:13  Starting analysing Green-Orange active pairs em: AUDUSD
+12/17/2020 05:25:14  Starting analysing Green-Orange active pairs em: EURJPY
+12/17/2020 05:25:15  Existem menos de 10 ciclos
+12/17/2020 05:25:16  Starting analysing Green-Orange active pairs em: GBPUSD
+12/17/2020 05:25:16  
+12/17/2020 05:25:19  Starting analysing Green-Orange active pairs em: USDJPY
+12/17/2020 05:25:19  Existem menos de 10 ciclos
+12/17/2020 05:25:19  Starting analysing Green-Orange active pairs em: AUDUSD
+12/17/2020 05:25:20  Starting analysing Green-Orange active pairs em: EURJPY
+12/17/2020 05:25:21  Existem menos de 10 ciclos
+12/17/2020 05:25:21  Starting analysing Green-Orange active pairs em: GBPUSD
+12/17/2020 05:25:22  
+12/17/2020 05:25:27  Starting analysing Green-Orange active pairs em: USDJPY
+12/17/2020 05:25:27  Existem menos de 10 ciclos
+12/17/2020 05:25:28  Starting analysing Green-Orange active pairs em: AUDUSD
+12/17/2020 05:25:29  Starting analysing Green-Orange active pairs em: EURJPY
+12/17/2020 05:25:29  Existem menos de 10 ciclos
+12/17/2020 05:25:30  Starting analysing Green-Orange active pairs em: GBPUSD
+12/17/2020 05:25:30  
+12/17/2020 05:25:33  Starting analysing Green-Orange active pairs em: USDJPY
+12/17/2020 05:25:33  Existem menos de 10 ciclos
+12/17/2020 05:25:34  Starting analysing Green-Orange active pairs em: AUDUSD
+12/17/2020 05:25:35  Starting analysing Green-Orange active pairs em: EURJPY
+12/17/2020 05:25:35  Existem menos de 10 ciclos
+12/17/2020 05:25:36  Starting analysing Green-Orange active pairs em: GBPUSD
+12/17/2020 05:25:37  
+12/17/2020 05:25:39  Starting analysing Green-Orange active pairs em: USDJPY
+12/17/2020 05:25:39  Existem menos de 10 ciclos
+12/17/2020 05:25:41  Starting analysing Green-Orange active pairs em: AUDUSD
+12/17/2020 05:25:43  Starting analysing Green-Orange active pairs em: EURJPY
+12/17/2020 05:25:43  Existem menos de 10 ciclos
+12/17/2020 05:25:44  Starting analysing Green-Orange active pairs em: GBPUSD
+12/17/2020 05:25:44  
+12/17/2020 05:25:47  Starting analysing Green-Orange active pairs em: USDJPY
+12/17/2020 05:25:48  Existem menos de 10 ciclos
+12/17/2020 05:25:48  Starting analysing Green-Orange active pairs em: AUDUSD
+12/17/2020 05:25:50  Starting analysing Green-Orange active pairs em: EURJPY
+12/17/2020 05:25:51  Existem menos de 10 ciclos
+12/17/2020 05:25:51  Starting analysing Green-Orange active pairs em: GBPUSD
+12/17/2020 05:25:52  
