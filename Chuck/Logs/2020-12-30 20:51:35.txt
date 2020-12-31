@@ -1,0 +1,2 @@
+12/30/2020 08:51:39  Conectado com sucesso! 40361
+12/30/2020 08:51:41  **error** get_realtime_candles() please input right "size"
