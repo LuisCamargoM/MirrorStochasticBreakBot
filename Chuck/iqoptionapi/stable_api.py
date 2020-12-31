@@ -217,13 +217,14 @@ class IQ_Option:
                     break
                 except:
                     logging.error('**error** get_all_init need reconnect')
-                    self.connect()
                     time.sleep(5)
+                    self.connect()                    
             start = time.time()
             while True:
                 if time.time() - start > 30:
                     logging.error('**warning** get_all_init late 30 sec')
-                    break
+                    time.sleep(5)
+                    self.connect()
                 try:
                     if self.api.api_option_init_all_result != None:
                         break

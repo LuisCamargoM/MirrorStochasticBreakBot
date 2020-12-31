@@ -153,6 +153,31 @@ def getActualSeconds():
     current_time = time.ctime()
     return str(current_time[17:19])
 
+def getUniqueID():
+    return str(uuid.uuid4())
+
+def writeSign(entradaTs,par,opEntrada):        
+    data = timestamp_converter(time.time())
+    fileName = data
+    extension='csv'   
+    id = str(getUniqueID()) 
+    hrTxt = str(timestamp_converter(entradaTs))
+    # with open('%s.%s'%(PATH,extension),'a+',newline='') as f:
+    with open('%s.%s'%(fileName,extension),'a+',newline='') as f:
+            fieldnames=['id','horaEntradaTxt','horaEntradaTs','paridade','op']
+            theWriter= csv.DictWriter(f,fieldnames=fieldnames)
+            if f.tell() == 0:
+                theWriter.writeheader()                
+            theWriter.writerow(
+                {
+                    'id': str(id),
+                    'horaEntradaTxt': str(hrTxt),
+                    'horaEntradaTs': int(entradaTs),                    
+                    'paridade': str(par),
+                    'op': str(opEntrada.lower())                
+                }
+            )
+    return
 #####################################################
 ############### FUNÇOES PRINCIPAIS ##################
 #####################################################
@@ -174,17 +199,19 @@ def hasSixthMirrorBreak(par,tm,at):
     cont = 1
     while True:
         if(cont > dvFifth):
-            return [True,getActualCandleColor(x,0),x[len(x)-1]['from'],x[len(x)-1]['id']]
+            p = getPastCandles(par,tm,3,x[0]['from'])
+            corGale = getActualCandleColor(p,0)
+            corEntrada = getActualCandleColor(p,1)            
+            corAtual = getActualCandleColor(x,2)
+            return [True,corEntrada,corGale,corAtual,x[len(x)-1]['from'],x[len(x)-1]['id']]
         else:
             corAnt = getActualCandleColor(x,ini-cont)
             corPost = getActualCandleColor(x,ini+cont)
             if(corAnt != corPost):
-                return [False,'','','']
+                return [False,'','','','','']
             else:
                 cont = cont + 1
-# cont = 6
-#   an             d              po
-#   47 48 49 50 51 52 53 54 55 56 57
+                
 def hasSeventhhMirrorBreak(par,tm,at):
     writeLog('Analysing '+str(par)+' for SeventhBreak')
     x = getPastCandles(par,tm,tamSixth,at)
@@ -192,12 +219,16 @@ def hasSeventhhMirrorBreak(par,tm,at):
     cont = 1
     while True:
         if(cont > dvSixth):
-            return [True,getActualCandleColor(x,0),x[len(x)-1]['from'],x[len(x)-1]['id']]
+            p = getPastCandles(par,tm,3,x[0]['from'])
+            corGale = getActualCandleColor(p,0)
+            corEntrada = getActualCandleColor(p,1)            
+            corAtual = getActualCandleColor(x,2)
+            return [True,corEntrada,corGale,corAtual,x[len(x)-1]['from'],x[len(x)-1]['id']]
         else:
             corAnt = getActualCandleColor(x,ini-cont)
             corPost = getActualCandleColor(x,ini+cont)
             if(corAnt != corPost):
-                return [False,'','', '']
+                return [False,'','','','','']
             else:
                 cont = cont + 1
 
@@ -208,12 +239,16 @@ def hasEighthMirrorBreak(par,tm,at):
     cont = 1
     while True:
         if(cont > dvEighth):
-            return [True,getActualCandleColor(x,0),x[len(x)-1]['from'],x[len(x)-1]['id']]
+            p = getPastCandles(par,tm,3,x[0]['from'])
+            corGale = getActualCandleColor(p,0)
+            corEntrada = getActualCandleColor(p,1)            
+            corAtual = getActualCandleColor(x,2)
+            return [True,corEntrada,corGale,corAtual,x[len(x)-1]['from'],x[len(x)-1]['id']]
         else:
             corAnt = getActualCandleColor(x,ini-cont)
             corPost = getActualCandleColor(x,ini+cont)
             if(corAnt != corPost):
-                return [False,'','','']
+                return [False,'','','','','']
             else:
                 cont = cont + 1
 
@@ -246,46 +281,99 @@ def start():
                     payout = Payout(par[k].upper(),tipo,tm)  
                     if(payout != None):
                         if(payout >= 70):   
-                            gerenciamento = ' Gerenciamento '
+                            # gerenciamento = ' Gerenciamento '
                             sixBreak = hasSixthMirrorBreak(par[k].upper(),tm,time.time())                                        
                             if(sixBreak[0]):
-                                candleId = int(sixBreak[3])
+                                candleId = int(sixBreak[5])
                                 if not (checkMsgSent(candleId)):
                                     signList.append(candleId)
-                                    cor = 'vermelha' if(sixBreak[1] == 'Red') else 'verde' 
-                                    op = 'Call 🔺' if (cor == 'vermelha') else 'Put 🔻'
-                                    bola = '🟢' if(op == 'Call') else '🔴'
-                                    tempo = timestamp_converter(sixBreak[2])
-                                    header = '🕵🏻‍♀️ Sinal del Mago 🕵🏻‍♀️\n\n'
-                                    body = '📊 Paridade: '+str(par[k].upper())+'\n⏰ Expiração: '+str(tmp)+'\n▶️ Entrada: '+str(getNextTime(tempo,1)[11:16])+' | '+str(op)+' '+str(bola) +'\n'                            
-                                    body = body + '\nSe a vela atual ('+str(tempo[11:16])+') finalizar '+str(cor)+' realiza a entrada❗️'
-                                    send(header + body,chat_id,my_token)
-                            sevenBreak = hasSeventhhMirrorBreak(par[k].upper(),tm,time.time())                    
-                            if(sevenBreak[0]):
-                                candleId = int(sevenBreak[3])
-                                if not (checkMsgSent(candleId)):
-                                    signList.append(candleId)
-                                    cor = 'vermelha' if(sevenBreak[1] == 'Red') else 'verde' 
-                                    op = 'Call 🔺' if (cor == 'vermelha') else 'Put 🔻'
-                                    bola = '🟢' if(op == 'Call') else '🔴'
-                                    tempo = timestamp_converter(sevenBreak[2])
-                                    header = '🕵🏻‍♀️ Sinal del Mago 🕵🏻‍♀️\n\n'
-                                    body = '📊 Paridade: '+str(par[k].upper())+'\n⏰ Expiração: '+str(tmp)+'\n▶️ Entrada: '+str(getNextTime(tempo,1)[11:16])+' | '+str(op)+' '+str(bola) +'\n'                              
-                                    body = body + '\nSe a vela atual ('+str(tempo[11:16])+') finalizar '+str(cor)+' realiza a entrada❗️'
-                                    send(header + body,chat_id,my_token)
-                            eigthBreak = hasEighthMirrorBreak(par[k].upper(),tm,time.time())                    
-                            if(eigthBreak[0]):
-                                candleId = int(eigthBreak[3])
-                                if not (checkMsgSent(candleId)):
-                                    signList.append(candleId)
-                                    cor = 'vermelha' if(eigthBreak[1] == 'Red') else 'verde' 
-                                    op = 'Call 🔺' if (cor == 'vermelha') else 'Put 🔻'
-                                    bola = '🟢' if(op == 'Call') else '🔴'
-                                    tempo = timestamp_converter(eigthBreak[2])
-                                    header = '🕵🏻‍♀️ Sinal del Mago 🕵🏻‍♀️\n\n'
-                                    body = '📊 Paridade: '+str(par[k].upper())+'\n⏰ Expiração: '+str(tmp)+'\n▶️ Entrada: '+str(getNextTime(tempo,1)[11:16])+' | '+str(op)+' '+str(bola) +'\n'                               
-                                    body = body + '\nSe a vela atual ('+str(tempo[11:16])+') finalizar '+str(cor)+' realiza a entrada❗️'
-                                    send(header + body,chat_id,my_token)
+                                    corEntrada = ''
+                                    if(sixBreak[1] == 'Red'):
+                                        corEntrada = 'vermelha'
+                                    else:
+                                        if(sixBreak[1] == 'Green'):
+                                            corEntrada = 'verde'
+                                        else:
+                                            corEntrada = 'doji'
+                                    if(corEntrada != 'doji'):
+                                        corGale = sixBreak[2]
+                                        opGale = 'Call' if (corGale == 'vermelha') else 'Put'
+                                        bolaGale = '🟢' if(opGale == 'Call') else '🔴'
+                                        
+                                        op = 'Call' if (corEntrada == 'vermelha') else 'Put'
+                                        bola = '🟢' if(op == 'Call') else '🔴'
+
+                                        corAtual = sixBreak[3]
+                                        tempo = timestamp_converter(sixBreak[4])
+                                        writeSign(sixBreak[4],par,op):      
+                                        header = '🕵🏻‍♀️ Sinal del Mago 🕵🏻‍♀️\n\n'
+                                        body = '📊 Paridade: '+str(par[k].upper())+'\n⏰ Expiração: '+str(tmp)+'\n▶️ Entrada: '+str(getNextTime(tempo,1)[11:16])+' | '+str(op)+' '+str(bola) +'\n'                            
+                                        body = body + '\nSe a vela atual ('+str(tempo[11:16])+') finalizar '+str(corAtual)+' realiza a entrada(6o)❗️\n\n'
+                                        footer = '⚠️ Em caso de Loss, entre na próxima vela: '+str(opGale)+' '+str(bolaGale)+' ⚠️'
+                                        
+                                        send(header + body + footer,chat_id,my_token)
+                            else:
+                                sevenBreak = hasSeventhhMirrorBreak(par[k].upper(),tm,time.time())                    
+                                if(sevenBreak[0]):
+                                    candleId = int(sevenBreak[5])
+                                    if not (checkMsgSent(candleId)):
+                                        signList.append(candleId)
+                                        corEntrada = ''                                        
+                                        if(sevenBreak[1] == 'Red'):
+                                            corEntrada = 'vermelha'
+                                        else:
+                                            if(sevenBreak[1] == 'Green'):
+                                                corEntrada = 'verde'
+                                            else:
+                                                corEntrada = 'doji'
+                                        if(corEntrada != 'doji'):
+                                            corGale = sevenBreak[2]
+                                            opGale = 'Call' if (corGale == 'vermelha') else 'Put'
+                                            bolaGale = '🟢' if(opGale == 'Call') else '🔴'
+                                            
+                                            op = 'Call' if (corEntrada == 'vermelha') else 'Put'
+                                            bola = '🟢' if(op == 'Call') else '🔴'
+
+                                            corAtual = sevenBreak[3]
+                                            tempo = timestamp_converter(sevenBreak[4])
+                                            writeSign(sevenBreak[4],par,op):      
+                                            header = '🕵🏻‍♀️ Sinal del Mago 🕵🏻‍♀️\n\n'
+                                            body = '📊 Paridade: '+str(par[k].upper())+'\n⏰ Expiração: '+str(tmp)+'\n▶️ Entrada: '+str(getNextTime(tempo,1)[11:16])+' | '+str(op)+' '+str(bola) +'\n'                            
+                                            body = body + '\nSe a vela atual ('+str(tempo[11:16])+') finalizar '+str(corAtual)+' realiza a entrada(6o)❗️\n\n'
+                                            footer = '⚠️ Em caso de Loss, entre na próxima vela: '+str(opGale)+' '+str(bolaGale)+' ⚠️'
+                                            
+                                            send(header + body + footer,chat_id,my_token)
+                                else:
+                                    eigthBreak = hasEighthMirrorBreak(par[k].upper(),tm,time.time())                    
+                                    if(eigthBreak[0]):
+                                        candleId = int(eigthBreak[5])
+                                        if not (checkMsgSent(candleId)):
+                                            signList.append(candleId)
+                                            corEntrada = ''
+                                            if(eigthBreak[1] == 'Red'):
+                                                corEntrada = 'vermelha'
+                                            else:
+                                                if(eigthBreak[1] == 'Green'):
+                                                    corEntrada = 'verde'
+                                                else:
+                                                    corEntrada = 'doji'
+                                            if(corEntrada != 'doji'):
+                                                corGale = eigthBreak[2]
+                                                opGale = 'Call' if (corGale == 'vermelha') else 'Put'
+                                                bolaGale = '🟢' if(opGale == 'Call') else '🔴'
+                                                
+                                                op = 'Call' if (corEntrada == 'vermelha') else 'Put'
+                                                bola = '🟢' if(op == 'Call') else '🔴'
+
+                                                corAtual = eigthBreak[3]
+                                                tempo = timestamp_converter(eigthBreak[4])
+                                                writeSign(eigthBreak[4],par,op):      
+                                                header = '🕵🏻‍♀️ Sinal del Mago 🕵🏻‍♀️\n\n'
+                                                body = '📊 Paridade: '+str(par[k].upper())+'\n⏰ Expiração: '+str(tmp)+'\n▶️ Entrada: '+str(getNextTime(tempo,1)[11:16])+' | '+str(op)+' '+str(bola) +'\n'                            
+                                                body = body + '\nSe a vela atual ('+str(tempo[11:16])+') finalizar '+str(corAtual)+' realiza a entrada(6o)❗️\n\n'
+                                                footer = '⚠️ Em caso de Loss, entre na próxima vela: '+str(opGale)+' '+str(bolaGale)+' ⚠️'
+                                                
+                                                send(header + body + footer,chat_id,my_token)
 
 try:
     tmp = getCorrectHour()
