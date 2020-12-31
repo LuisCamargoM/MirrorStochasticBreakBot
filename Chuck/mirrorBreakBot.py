@@ -287,7 +287,10 @@ def start():
                                     body = body + '\nSe a vela atual ('+str(tempo[11:16])+') finalizar '+str(cor)+' realiza a entrada❗️'
                                     send(header + body,chat_id,my_token)
 
-tmp = getCorrectHour()
-strTm = f'"{tmp}"'
-os.system('date -s '+str(tmp))
-start()      
+try:
+    tmp = getCorrectHour()
+    strTm = f'"{tmp}"'
+    os.system('date -s '+str(tmp))
+    start()      
+except Exception as e:
+    writeLog(e)
